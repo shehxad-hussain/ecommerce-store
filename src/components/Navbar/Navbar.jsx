@@ -97,8 +97,8 @@ const Navbar = ({ handleOrderPopup }) => {
       <div data-aos="zoom-in" className="flex justify-center">
         <ul className="sm:flex hidden items-center gap-4">
           {Menu.map((data) => (
-            <li key={data.id}>
-              <a
+            <li  key={data.id || `menu-item-${index}`}  >
+              <a  
                 href={data.link}
                 className="inline-block px-4 hover:text-primary duration-200"
               >
